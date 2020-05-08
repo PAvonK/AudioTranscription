@@ -55,4 +55,6 @@ dkms.conf
 audiofiles/
 *.mp3
 *.wav
+*.docx
+transcript.txt
 api-key.json
