@@ -1,0 +1,3 @@
+rm -f /audiofiles/parts/*
+
+ffmpeg -i audiofiles/transcript.wav -f segment -segment_time 30 -c copy audiofiles/parts/out%09d.wav
