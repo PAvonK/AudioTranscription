@@ -1,8 +1,6 @@
 import os
 import speech_recognition as sr
 from tqdm import tqdm
-from multiprocessing.dummy import Pool
-pool = Pool(8) # Number of concurrent threads
 import time
 
 with open("api-key.json") as f:
@@ -11,29 +9,21 @@ with open("api-key.json") as f:
 r = sr.Recognizer()
 files = sorted(os.listdir('audiofiles/parts/'))
 
-def transcribe(data):
-    idx, file = data
-    name = "audiofiles/parts/" + file
-    print(name + " started")
-    time.sleep(0.3)
+all_text = []
+
+for f in tqdm(files):
+    name = "audiofiles/parts/" + f
     # Load audio file
     with sr.AudioFile(name) as source:
         audio = r.record(source)
     # Transcribe audio file
     text = r.recognize_google_cloud(audio, credentials_json=GOOGLE_CLOUD_SPEECH_CREDENTIALS)
-    print(name + " done")
-    return {
-        "idx": idx,
-        "text": text
-    }
-
-all_text = pool.map(transcribe, enumerate(files))
-pool.close()
-pool.join()
+    all_text.append(text)
+    time.sleep(.2)
 
 transcript = ""
-for t in sorted(all_text, key=lambda x: x['idx']):
-    total_seconds = t['idx'] * 30
+for i, t in enumerate(all_text):
+    total_seconds = i * 30
     # Cool shortcut from:
     # https://stackoverflow.com/questions/775049/python-time-seconds-to-hms
     # to get hours, minutes and seconds
@@ -41,7 +31,7 @@ for t in sorted(all_text, key=lambda x: x['idx']):
     h, m = divmod(m, 60)
 
     # Format time as h:m:s - 30 seconds of text
-    transcript = transcript + "{:0>2d}:{:0>2d}:{:0>2d} {}\n".format(h, m, s, t['text'])
+    transcript = transcript + "{:0>2d}:{:0>2d}:{:0>2d} {}\n".format(h, m, s, t)
 
 print(transcript)
 
