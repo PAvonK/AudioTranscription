@@ -1,9 +1,6 @@
 # AudioTranscription
 > Provides a written transcript of an audio file.
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
 
 This project works to
 1. Convert mp3 files to wav files
@@ -11,7 +8,7 @@ This project works to
 3. Use google text to speech in order to transcribe the audio clips
 4. stitches back together the transcribed clips into singe txt docmument showing 30 second breaks
 
-![](header.png)
+
 
 ## Installation
 
@@ -48,7 +45,7 @@ Currently project is in process and works in parts within Python3
 
 ## Meta
 
-Your Name – Phil A von KAenel
+Your Name â€“ Phil A von KAenel
 
 [https://github.com/PAvonK/AudioTranscription](https://github.com/PAvonK)
 
