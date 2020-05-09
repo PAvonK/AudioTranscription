@@ -41,7 +41,7 @@ Currently project is in process and works in parts within Python3
    * NA - CHANGE: Rename `foo()` to `bar()`
 * 0.1.0
    * NA - The first proper release
-* 0.0.1)
+* 0.0.1
     * Work in progress)
 
 ## Meta
