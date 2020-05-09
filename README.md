@@ -27,7 +27,7 @@ None
 Currently project is in process and works in parts within Python3
 
 
-
+[comment]: <> (This is a comment, it will not be included)
 ## Release History
 
 * 0.2.1
