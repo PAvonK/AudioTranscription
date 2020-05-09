@@ -30,9 +30,9 @@ Currently project is in process and works in parts within Python3
 [comment]: <> (This is a comment, it will not be included)
 ## Release History
 
-* 0.2.1
-    * NA - CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
+[comment]: <> * 0.2.1
+[comment]: <>    * NA - CHANGE: Update docs (module code remains unchanged)
+[comment]: <> * 0.2.0
     * NA - CHANGE: Remove `setDefaultXYZ()`
     * NA - ADD: Add `init()`
 * 0.1.1
