@@ -3,9 +3,9 @@
 
 
 This project works to
-1. Convert mp3 files to wav files
-2. Break full audio into 30 second segments for each transcription
-3. Use google text to speech in order to transcribe the audio clips
+1. Convert mp3 files to wav files (converter.py)
+2. Break full audio into 30 second segments for each transcription (ffmpeg command in parts_create_command.txt)
+3. Use google text to speech in order to transcribe the audio clips (transcribe.py)
 4. stitches back together the transcribed clips into singe txt docmument showing 30 second breaks
 
 
