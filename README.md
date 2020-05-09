@@ -30,16 +30,16 @@ Currently project is in process and works in parts within Python3
 [comment]: <> (This is a comment, it will not be included)
 ## Release History
 
-[comment]: <> * 0.2.1
-[comment]: <>    * NA - CHANGE: Update docs (module code remains unchanged)
-[comment]: <> * 0.2.0
-    * NA - CHANGE: Remove `setDefaultXYZ()`
-    * NA - ADD: Add `init()`
-* 0.1.1
-    * NA - FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
-* 0.1.0
-    * NA - The first proper release
-    * NA - CHANGE: Rename `foo()` to `bar()`
+[comment]: <> (* 0.2.1)
+[comment]: <>    (* NA - CHANGE: Update docs (module code remains) unchanged)
+[comment]: <> (* 0.2.0)
+[comment]: <>    (* NA - CHANGE: Remove `setDefaultXYZ()`)
+[comment]: <>    (* NA - ADD: Add `init()`)
+[comment]: <>(* 0.1.1)
+[comment]: <>    (* NA - FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
+[comment]: <>(* 0.1.0)
+[comment]: <>    (* NA - The first proper release)
+[comment]: <>    (* NA - CHANGE: Rename `foo()` to `bar()`)
 * 0.0.1
     * Work in progress
 
