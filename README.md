@@ -30,7 +30,7 @@ Currently project is in process and works in parts within Python3
 [comment]: # (This is a comment, it will not be included)
 ## Release History
 
-
+<!---
 [comment]: # (* 0.2.1)
 
 [comment]: # (* NA - CHANGE: Update docs (module code remainsunchanged))
@@ -54,6 +54,7 @@ Currently project is in process and works in parts within Python3
 [comment]: # (* 0.0.1)
 
 [comment]: # (* Work in progress)
+-->
 
 ## Meta
 
