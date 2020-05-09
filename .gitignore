@@ -58,3 +58,4 @@ audiofiles/
 *.docx
 transcript.txt
 api-key.json
+*.pdf
