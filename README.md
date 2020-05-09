@@ -43,7 +43,7 @@ Currently project is in process and works in parts within Python3
 
 [comment]: # (0.1.1)
 
-[comment]: # ((* NA - FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!))
+[comment]: # (* NA - FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
 
 [comment]: # (* NA - CHANGE: Rename `foo()` to `bar()`)
 
